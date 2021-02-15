@@ -42,7 +42,7 @@ if(lovetravle == "y"){
 
     let nameMbf= prompt("What is the name of my best friend?");
     console.log(nameMbf);
-    if(nameMbf.toLowerCase() ==='ahmad'){
+    if(nameMbf.toLowerCase() === 'ahmad'){
         alert("yes he is ahmad");
     }
     else{
