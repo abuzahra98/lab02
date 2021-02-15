@@ -1,0 +1,32 @@
+body{
+    width: 960;
+    margin: auto;
+    background-color: lightgreen;
+    
+}
+.mnn {
+    display: block;
+  margin: auto;
+  
+}
+
+header nav ul li {
+display: inline;
+padding: 30px;
+
+}
+
+header nav ul{
+
+text-align: center;
+}
+
+p{
+    line-height: 30px;
+}
+main ul {
+    text-align: center;
+    background-color: lightseagreen;
+    font-size: large;
+    margin: auto;
+}
