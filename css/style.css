@@ -1,5 +1,5 @@
 body{
-    width: 960;
+    width: 960px;
     margin: auto;
     background-color: lightgreen;
     
@@ -24,9 +24,20 @@ text-align: center;
 p{
     line-height: 30px;
 }
-main ul {
+
+
+main ul li:nth-child(odd)
+{
     text-align: center;
-    background-color: lightseagreen;
+    background-color: rgb(95, 32, 178);
+    font-size: large;
+    margin: auto;
+}
+
+main ul li:nth-child(even)
+{
+    text-align: center;
+    background-color: rgb(90, 178, 32);
     font-size: large;
     margin: auto;
 }
