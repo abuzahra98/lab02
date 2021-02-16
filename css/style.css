@@ -1,7 +1,7 @@
 body{
     width: 960px;
     margin: auto;
-    background-color: lightgreen;
+    background-color: rgb(32, 173, 138);
     
 }
 .mnn {
@@ -29,7 +29,7 @@ p{
 main ul li:nth-child(odd)
 {
     text-align: center;
-    background-color: rgb(95, 32, 178);
+    background-color: rgb(32, 59, 178);
     font-size: large;
     margin: auto;
 }
@@ -40,4 +40,23 @@ main ul li:nth-child(even)
     background-color: rgb(90, 178, 32);
     font-size: large;
     margin: auto;
+}
+
+.aa li:nth-child(odd){
+
+    background-color: rgb(32, 161, 178);
+    font-size: large;
+    margin: auto;
+
+
+}
+
+
+.aa li:nth-child(even){
+
+    background-color: rgb(144, 32, 178);
+    font-size: large;
+    margin: auto;
+
+
 }
