@@ -7,7 +7,7 @@ lovecoffe = lovecoffe.toLowerCase();
 
 
 
-if (lovecoffe === 'y') {
+if (lovecoffe === 'y'|| lovecoffe === 'yes') {
   alert('you are good');
   console.log(lovecoffe);
 }
@@ -18,7 +18,7 @@ else {
 }
 
 let lovemeet = prompt('do i love meet?: Answer y/n:');
-if (lovemeet === 'y') {
+if (lovemeet === 'y'|| lovemeet === 'yes') {
   alert('yes i love it');
   console.log(lovemeet);
 }
@@ -29,7 +29,7 @@ else {
 }
 
 let lovetravle = prompt('do i love travel?: Answer: y/n  *ـ*');
-if (lovetravle === 'y') {
+if (lovetravle === 'y'||lovetravle === 'yes') {
   alert('of course');
   console.log(lovetravle);
 }
