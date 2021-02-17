@@ -4,8 +4,8 @@ let userScoor =0;
 let userName = prompt('enter name:');
 
 const user = function (userName){
-alert('welcome' + ' ' + userName);
-console.log(userName);
+  alert('welcome' + ' ' + userName);
+  console.log(userName);
 }
 
 user();
