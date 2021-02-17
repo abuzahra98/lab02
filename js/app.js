@@ -1,9 +1,13 @@
 let userScoor =0;
 
-
 let userName = prompt('enter name:');
+
+const user = function (userName){
 alert('welcome' + ' ' + userName);
 console.log(userName);
+}
+
+user();
 
 let lovecoffe = prompt('do i love coffe?:y/n');
 lovecoffe = lovecoffe.toLowerCase();
