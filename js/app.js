@@ -8,7 +8,7 @@ function userN() {
 
 
   alert('welcome' + ' ' + userName);
-  console.log(userName);
+
 }
 
 userN();
@@ -21,30 +21,32 @@ function loveCoffe() {
 
   if (lovecoffe === 'y' || lovecoffe === 'yes') {
     alert('you are good');
-    console.log(lovecoffe);
+
     userScoor++;
   }
+
   else {
     alert('you are wrong');
-    console.log(lovecoffe);
-
   }
+
 }
+
 loveCoffe();
 
 function loveMeet() {
   let lovemeet = prompt('do i love meet?: Answer y/n:');
   if (lovemeet === 'y' || lovemeet === 'yes') {
     alert('yes i love it');
-    console.log(lovemeet);
+
     userScoor++;
 
   }
-  else {
-    alert('noooo i love it');
-    console.log(lovemeet);
 
+  else {
+
+    alert('noooo i love it');
   }
+
 }
 loveMeet();
 
@@ -52,21 +54,22 @@ function loveTravel() {
   let lovetravle = prompt('do i love travel?: Answer: y/n  *ـ*');
   if (lovetravle === 'y' || lovetravle === 'yes') {
     alert('of course');
-    console.log(lovetravle);
+
     userScoor++;
 
   }
   else {
     alert('of course i love travel');
-    console.log(lovetravle);
-
   }
+
+
 }
+
 loveTravel();
 
 function guessName() {
   let nameMbf = prompt('What is the name of my best friend?');
-  console.log(nameMbf);
+
   if (nameMbf.toLowerCase() === 'ahmad') {
     alert('yes he is ahmad');
     userScoor++;
@@ -106,25 +109,31 @@ function guessNum() {
 }
 guessNum();
 
-function colorTab() {
-  let arr = ['red', 'green', 'blue', 'yallow'];
-  let countAttemtcolor = 0;
-  let favColor = prompt('guess my fav color');
-  while (arr[0] !== favColor && arr[1] !== favColor && arr[2] !== favColor && arr[3] !== favColor && countAttemtcolor < 5) {
+function playerN() {
+  let arr = ['ronaldo', 'messi', 'xavi', 'kaka '];
 
-    alert('not correct,try agian');
-    ++countAttemtcolor;
-    favColor = prompt('guess my fav color');
-
+  let playerName = prompt('guess my best player');
+  let conditionCheck = false;
+  for (let index = 0; index < 5; index++) {
+    if (arr[0] !== playerName && arr[1] !== playerName && arr[2] !== playerName && arr[3] !== playerName) {
+      alert('You are wrong');
+      playerName = prompt('guess my best player');
+    } else if (arr[0] === playerName && arr[1] === playerName && arr[2] === playerName && arr[3] === playerName) {
+      conditionCheck = true;
+      break;
+    }
   }
-  if (arr[0] === favColor || arr[1] === favColor || arr[2] === favColor || arr[3] === favColor) {
+
+  if (!conditionCheck) {
+    alert('my best player is' + '  ' + arr[0] + '  ' + arr[1] + '  ' + arr[2] + '  ' + arr[3]);
+  } else {
     alert('you are right');
+
     userScoor++;
 
-  } else {
-    alert('my fav colors are' + ' ' + arr[0] + ' ' + arr[1] + ' ' + arr[2] + ' ' + arr[3]);
+
   }
 
   alert('your scoor is: ' + userScoor + ' /7');
 }
-colorTab();
+playerN();
