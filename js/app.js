@@ -12,9 +12,12 @@ function userN() {
 }
 
 userN();
-let lovecoffe ;
+
 
 function loveCoffe() {
+  let lovecoffe = prompt('do i loveCoffe?: Answer y/n:');
+
+ 
   while (lovecoffe !== 'yes' && lovecoffe !== 'y' && lovecoffe !== 'no' && lovecoffe !== 'n') {
 
     switch (lovecoffe) {
@@ -33,6 +36,7 @@ function loveCoffe() {
       alert('no i love a coffe');
       break;
     default:
+      lovecoffe = prompt('do i loveCoffe?: Answer y/n:');
       break;
     }
 
