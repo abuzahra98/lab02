@@ -12,21 +12,30 @@ function userN() {
 }
 
 userN();
+let lovecoffe ;
 
 function loveCoffe() {
-  let lovecoffe = prompt('do i love coffe?:y/n');
-  lovecoffe = lovecoffe.toLowerCase();
+  while (lovecoffe !== 'yes' && lovecoffe !== 'y' && lovecoffe !== 'no' && lovecoffe !== 'n') {
 
+    switch (lovecoffe) {
+    case 'yes':
+      alert('yes i love it');
+      userScoor++;
+      break;
+    case 'y':
+      alert('yes i love it');
+      userScoor++;
+      break;
+    case 'no':
+      alert('no i love a coffe');
+      break;
+    case 'n':
+      alert('no i love a coffe');
+      break;
+    default:
+      break;
+    }
 
-
-  if (lovecoffe === 'y' || lovecoffe === 'yes') {
-    alert('you are good');
-
-    userScoor++;
-  }
-
-  else {
-    alert('you are wrong');
   }
 
 }
@@ -126,14 +135,17 @@ function playerN() {
 
   if (!conditionCheck) {
     alert('my best player is' + '  ' + arr[0] + '  ' + arr[1] + '  ' + arr[2] + '  ' + arr[3]);
+    userScoor++;
   } else {
     alert('you are right');
 
-    userScoor++;
+
 
 
   }
 
   alert('your scoor is: ' + userScoor + ' /7');
+
 }
 playerN();
+
